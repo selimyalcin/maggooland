@@ -1,0 +1,85 @@
+@tailwind base;
+@import "./mixins.scss";
+@tailwind components;
+@import "./button.scss";
+@import "./forms.scss";
+@import "./modal.scss";
+@import "./components/header.scss";
+@import "./components/games.scss";
+@import "./components/marketplace.scss";
+@tailwind utilities;
+
+@layer base {
+
+
+    body {
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    
+
+        &.dark {
+            @apply bg-dark-bg text-dark-primary
+        }
+
+        @apply bg-dark-bg font-poppins text-white;
+    }
+
+    .logo {
+        img {
+            @apply h-12
+        }
+
+        span {
+            @apply text-light-secondary font-bold text-[20px]
+        }
+
+        @apply flex flex-row justify-center items-center select-none 
+    } 
+
+
+
+
+    .dark {}
+
+
+}
+
+@layer utilities {}
+
+@layer components {
+    .mobile-sort{
+        
+        z-index: 99999999;
+        @apply fixed w-full bg-dark-bg left-0 -bottom-full transition-all duration-700 h-full p-4 opacity-0 invisible
+    }
+    .search-input{
+        &::placeholder{
+            @apply text-slate-400
+        }
+        &:focus, &:focus-visible{
+            outline:none !important;
+            box-shadow:none !important;
+            border-color:#7b8191 !important;
+        }
+        @apply rounded-xl border-2 border-[#4C505C] bg-transparent py-3 px-2 w-full hover:border-[#7b8191] transition-all duration-300 ease-in-out 
+        sm:border-transparent sm:hover:border-transparent pl-10 
+    }
+    .pill-menu{
+        li{
+
+            a{
+                &.active, &:hover{
+                    @apply bg-green-200 text-black
+                }
+                span{
+                    @apply mr-2
+                }
+                @apply p-4 rounded-lg transition-all duration-300 ease-in-out w-full flex items-center
+            }
+
+            @apply w-full relative flex items-center justify-start mb-2
+        }
+        @apply list-none
+    }
+}

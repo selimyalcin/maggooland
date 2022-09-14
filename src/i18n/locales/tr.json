@@ -1,0 +1,50 @@
+{
+    "tr": {
+        "niceName" : "Türkçe",
+        "flag":"TR",
+
+        "games": "Oyunlar",
+        "marketplace" : "Market",
+        "data":"Veri",
+        "search_text" : "İtem, oyun veya hesap arayın",
+        "settings":"Ayarlar",
+        "select_locale" : "Dil Seç",
+        "profile":"Profil",
+        "featured_items":"Öne çıkan öğeler",
+        "notify":"Bildirimler",
+        "offers":"Teklifler",
+        "account_support":"Hesap Desteği",
+        "earnings":"Kazançlar",
+        "connect" : "Bağlan",
+        "preview":"Görüntüle",
+
+        "prof_details" : "Profil Detayları",
+        "username":"Kullanıcı Adı",
+        "bio":"Bio",
+        "email_addr" : "Email Adresi",
+        "soc_conns" : "Sosyal Medya Bağlantıları",
+        "soc_conns_help":"Sosyal hesapları bağlayarak koleksiyoncuların hesabınızı doğrulamasına yardımcı olun",
+        "links" : "Bağlantılar",
+        "wallet" : "Cüzdan",
+        "prof_img" : "Profil Fotosu",
+        "prof_banner" : "Profile Banner",
+
+        "featured" : {
+            "no_items" : "Henüz profilinizde öne çıkarmak için toplanmış öğeniz yok."
+        },
+
+        "copy":"Kopyala",
+
+        "menu": [
+            "Anasayfa"
+        ],
+        "test": "deneme",
+        "object": {
+            "a": "1233"
+        },
+        "parse": "hoşgeldin {name}",
+        "parses": {
+            "a": "hoşgeldin {name}"
+        }
+    }
+}

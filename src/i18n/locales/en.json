@@ -1,0 +1,61 @@
+{
+    "en": {
+        "niceName" : "English",
+        "flag":"GB",
+
+        "games": "Games",
+        "marketplace" : "Marketplace",
+        "data":"Data",
+        "search_text" : "Search items, games and account",
+        "settings":"Settings",
+        "select_locale" : "Select Locale",
+        "profile":"Profile",
+        "featured_items":"Featured items",
+        "notify":"Notifications",
+        "offers":"Offers",
+        "account_support":"Account Support",
+        "earnings":"Earnings",
+        "connect" : "Connect",
+        "preview":"Preview",
+
+        "prof_details" : "Profile Details",
+        "username":"Username",
+        "bio":"Bio",
+        "email_addr" : "Email Address",
+        "soc_conns" : "Social Connections",
+        "soc_conns_help":"Help collectors verify your account by connecting social accounts",
+        "links" : "Links",
+        "wallet" : "Wallet",
+        "prof_img" : "Profile Image",
+        "prof_banner" : "Profile Banner",
+
+        "featured" : {
+            "no_items" : "You don’t have any collected items to feature on your profile yet."
+        },
+
+        "notifys":{
+            "desc" : "Select which notifications you would like to receive for {wallet}"
+        },
+        "offersl":{
+            "desc" : "Set a minimum offer for collections to ignore low offers"
+        },
+        "accountsl":{
+            "desc" : "If you need help related to your account, we can help you."
+        },
+
+        "copy":"Copy",
+
+        
+        "menu": [
+            "Home"
+        ],
+        "test": "tesxt",
+        "object": {
+            "a": "1233"
+        },
+        "parse": "welcome to {name}",
+        "parses": {
+            "a": "welcome to {name}"
+        }
+    }
+}

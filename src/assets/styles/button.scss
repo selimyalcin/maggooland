@@ -1,0 +1,132 @@
+* {
+    div{
+        .tooltip{
+            transform:translateY(-50%) translateX(-50%);
+            @apply min-w-[200px]
+        }
+    }
+    .tooltip {
+
+        content: attr(data-text);
+        /* here's the magic */
+        position: absolute;
+
+        /* vertically center */
+
+        transform: translateY(-50%);
+
+        /* move to right */
+        left: -50%;
+        margin-left: 15px;
+        /* and add a small left margin */
+
+
+
+        @apply text-xs p-2 rounded-lg bg-gray-700 top-5 text-center text-white transition-all duration-300 opacity-0
+    }
+}
+
+.btn {
+    .tooltip{
+        transform: translateY(-50%) !important;
+        left:-100%;
+        @apply min-w-[60px]
+    }
+    &.btn-xl {
+        @apply py-5 px-8 mx-2 text-2xl
+    }
+
+    &.btn-sm {
+        @apply px-3 py-2 mx-2 text-sm
+    }
+
+    &.btn-primary {
+        @apply bg-green-500 text-black hover:bg-green-300
+    }
+
+    &.btn-secondary {
+        @apply bg-gray-600 text-white hover:bg-gray-700
+    }
+
+    &.btn-alert {
+        @apply bg-alert-100 text-white hover:bg-alert-200
+    }
+
+    &.btn-warning {
+        @apply bg-warning-100 text-white hover:bg-warning-200
+    }
+
+    &.btn-outline-primary {
+        @apply border border-green-500 text-green-500 hover:border-green-100 hover:text-green-100
+    }
+
+    &.btn-outline-secondary {
+        @apply border border-gray-400 text-gray-400 hover:border-gray-600 hover:text-gray-600
+    }
+
+    &.btn-outline-alert {
+        @apply border border-alert-100 text-alert-100 hover:border-alert-400 hover:text-alert-400
+    }
+
+    &.btn-outline-warning {
+        @apply border border-warning-100 text-warning-100 hover:border-warning-400 hover:text-warning-400
+    }
+
+    &.btn-icon {
+
+        @apply rounded-full hover:bg-slate-700 p-2 flex items-center justify-center transition-all duration-500 relative
+    }
+
+    &:hover {
+        .submenu {
+            // @apply opacity-100 visible h-auto
+        }
+    }
+
+    .submenu {
+        max-height: calc(100vh - 46px);
+        transition-property: transform, visibility, opacity;
+        overflow-wrap: break-word;
+        top: 45px;
+        left: calc(50% - 200px);
+        //transform: translateY(105%) translateX(0%);
+
+        ul {
+            list-style: none;
+
+            li {
+                border-bottom: 1px solid rgb(21, 27, 34);
+
+                a {
+                    &:hover {
+                        @apply bg-[#494d56]
+                    }
+
+                    .icon {
+                        @apply mr-3
+                    }
+
+                    @apply w-full py-4 ml-0 flex transition-all duration-300 ease-in-out font-normal items-center justify-start text-sm px-2 text-white
+                }
+
+                @apply py-0 px-0
+            }
+        }
+
+        @apply absolute bg-[#303339] w-56 rounded-md overflow-y-auto duration-1000 shadow-lg z-50 opacity-0 invisible h-0
+    }
+
+
+    @apply inline-flex flex-row items-center justify-center rounded-xl text-lg font-semibold leading-6 px-12 py-4 border-2 border-transparent transition-all duration-300
+}
+
+.dark {
+    .btn {
+        &:hover {
+
+            box-shadow: inset 2px 2px 2px 0 #1e2022, inset -2px -2px 2px 0 #2e3034;
+
+        }
+
+    }
+}

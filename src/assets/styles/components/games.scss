@@ -1,0 +1,48 @@
+.btn-filter{
+    &.active, &:hover{
+
+        
+        @apply text-green-500
+    }
+    @apply p-0 text-slate-300 text-[16px] rounded-none pb-3 font-semibold mr-16  relative cursor-pointer  transition-all duration-300
+}
+
+.tabs-responsive{
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        
+        border-radius: 0px;
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: transparent; 
+        border-radius: 0px;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: transparent; 
+      }
+}
+.items{
+    .item{
+        .title{
+            @apply text-2xl z-50
+        }
+        .subtitle{
+            @apply z-50 text-white text-sm
+        }
+        .cover{
+            @apply absolute w-full h-full top-0 left-0 z-10 transition-all duration-[3600ms] hover:scale-125 ease-out
+        }
+        @apply rounded-2xl h-[440px] shadow-lg flex flex-col items-start justify-start p-6 relative overflow-hidden cursor-pointer
+    }
+
+    @apply mt-16 grid grid-cols-4 gap-8 sm:grid-cols-2
+}

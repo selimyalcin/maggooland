@@ -1,0 +1,7 @@
+.marketplace-banner{
+    background-image: url(@/assets/images/mp-bg.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+    @apply bg-[#0c101c] min-h-[600px] sm:min-h-[460px] sm:bg-mp
+}

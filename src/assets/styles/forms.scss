@@ -1,0 +1,44 @@
+.form-group{
+    label{
+        @apply mb-3
+    }
+    @apply flex flex-col my-4
+}
+
+.form-control{
+    &:focus-visible{
+        @apply outline-none border-[#7b8191]
+    }
+
+    &:focus, &:focus-visible, &:hover{
+        outline:none !important;
+        box-shadow:none !important;
+        border-color:#7b8191 !important;
+    }
+   
+    @apply bg-transparent rounded-xl border border-cgray p-3  transition-all duration-300
+}
+
+.form-control-lg{
+    &:focus-visible{
+        @apply outline-none border-[#7b8191]
+    }
+   
+    @apply bg-transparent rounded-xl border border-cgray p-5 text-2xl
+}
+
+.form-control-sm{
+    &:focus-visible{
+        @apply outline-none border-[#7b8191]
+    }
+   
+    @apply bg-transparent rounded-xl border border-cgray p-2 text-sm
+}
+
+.form-control[multiple]{
+    @apply min-h-[140px]
+}
+
+.form-control[type="textarea"]{
+    @apply min-h-[140px]
+}

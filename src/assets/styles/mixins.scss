@@ -1,0 +1,6 @@
+@mixin neo() {
+    border-radius: 0px;
+    box-shadow: 20px 20px 60px #cfcfcf,
+        -20px -20px 60px #ffffff;
+    @apply bg-light-bg
+}
